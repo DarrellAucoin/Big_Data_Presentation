@@ -1,0 +1,22 @@
+% Flipping a coin
+% Author: cis
+\documentclass[border=10pt,varwidth]{standalone}
+%%%<
+\usepackage{verbatim}
+%%%>
+\usepackage{amsmath, amssymb}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[all]{xy}
+\begin{document}
+
+\xymatrix{\\
+ & \mbox{Mapper 0}\ar@(ul,ur)^{{map}} &  & \mbox{Reducer 0}\\
+\mbox{HDFS}\ar[ur]|-{\left(k_{1},v_{1}\right)}\ar[r]|-{\left(k_{1},v_{1}\right)}\ar[ddr]|-{\left(k_{1},v_{1}\right)} & \mbox{Mapper 1}\ar@(ul,ur)^{{map}} &  & \mbox{Reducer 1} & \mbox{HDFS}\\
+ & \vdots &  & \vdots\\
+ & \mbox{Mapper M-1}\ar@(ul,ur)^{{map}} &  & \mbox{Reducer R-1}
+}
+ 
+ 
+
+ \end{document}

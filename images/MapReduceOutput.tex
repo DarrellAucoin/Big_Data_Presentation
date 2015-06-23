@@ -1,0 +1,33 @@
+% Flipping a coin
+% Author: cis
+\documentclass[border=10pt,varwidth]{standalone}
+%%%<
+\usepackage{verbatim}
+%%%>
+\begin{comment}
+:Title: Tree of probabilities - flipping a coin
+:Tags: Trees;Nodes and shapes;Mathematics
+:Author: cis
+:Slug: coin-flipping
+
+In mathematics, specifically in statistics, coin-flipping is an introductory
+example of the complexities of probability and statistics.
+
+This example was written by cis on TikZ.de.
+http://tikz.de/baum/
+\end{comment}
+\usepackage{tikz}
+\usetikzlibrary{calc, shapes, backgrounds}
+\usepackage{amsmath, amssymb}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[all]{xy}
+\begin{document}
+
+\xymatrix{ & \mbox{Mapper 0}\ar@(ul,ur)^{{map,combiner}}\ar[drr]|-{(k_{2},v_{2})}\ar[rr]|-{(k_{2},v_{2})}\ar[dddrr]|-{(k_{2},v_{2})} &  & \mbox{Reducer 0}\ar@(ul,ur)^{{sort,reduce}}\ar[dr]|-{(k_{3},v_{3})}\\
+\mbox{HDFS}\ar[ur]|-{\left(k_{1},v_{1}\right)}\ar[r]|-{\left(k_{1},v_{1}\right)}\ar[ddr]|-{\left(k_{1},v_{1}\right)} & \mbox{Mapper 1}\ar@(ul,ur)^{{map,combiner}} &  & \mbox{Reducer 1}\ar@(ul,ur)^{{sort,reduce}}\ar[r]|-{(k_{3},v_{3})} & \mbox{HDFS}\\
+ & \vdots &  & \vdots\\
+ & \mbox{Mapper M-1}\ar@(ul,ur)^{{map,combiner}} &  & \mbox{Reducer R-1}\ar@(ul,ur)^{{sort,reduce}}\ar[uur]|-{(k_{3},v_{3})}
+}
+
+ \end{document}
