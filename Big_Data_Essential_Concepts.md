@@ -1,39 +1,4 @@
 
-<head>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-</head>
-
-<style>
-
-@font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-}
-#notebook_panel { /* main background */
-    background: #888;
-    color: #f6f6f6;
-}
-#notebook li { /* More space between bullet points */
-margin-top:0.8em;
-}
-div.text_cell_render{
-    font-family: 'Arvo' sans-serif;
-    line-height: 130%;
-    font-size: 135%;
-    width:1000px;
-    margin-left:auto;
-    margin-right:auto;
-}
-div.cell.code_cell {  
-    font-family: 'Arvo' sans-serif;
-    line-height: 150%;
-    font-size: 150%;
-}
-
-</style>
 
 
 <center>
@@ -50,12 +15,6 @@ div.cell.code_cell {
 </center>
 > In pioneer days they used oxen for heavy pulling, and when one ox couldn’t budge a log, they didn’t try to grow a larger ox. We shouldn’t be trying for bigger computers, but for more systems of computers.  
 > —Grace Hoppe
-
-<style type="text/css">
-.input_prompt, .output_prompt {
-    display:none !important;
-}
-</style>
 
 # What is Big Data?
 ![alt text](images/4-Vs-of-big-data.jpg)
