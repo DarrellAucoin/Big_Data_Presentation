@@ -17,7 +17,7 @@
 > —Grace Hoppe
 
 # What is Big Data?
-![alt text](images/4-Vs-of-big-data.jpg)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/4-Vs-of-big-data.jpg)
 
 ## The 4 V's of Big Data
 __Volume__: The _quantity_ of data. 
@@ -38,7 +38,7 @@ __Problem__: Impossible to do data analysis with one computer on data this size.
 
 __Solution__: A distributed computing system.
 
-![alt text](images/Yahoo-hadoop-cluster_OSCON_2007.jpg)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Yahoo-hadoop-cluster_OSCON_2007.jpg)
 
 ###Veracity
 - Big Data sets do not have the controls of regular studies  
@@ -92,14 +92,14 @@ __SQL__: Can spill to disk allowing datasets to be larger than memory size.
 __MADlib__: Machine learning library extension for PostgreSQL.
 
 ## Hadoop Ecosystem
-![alt text](images/Big-data_tools_last.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools_last.png)
 
 - The blue is the necessary components of a Hadoop Ecosystem
 - Some tools provide several functionalities.
     - i.e. Hadoop is a distributed file system with MapReduce engine and scheduler.
 
 ### Distributed File System
-![alt text](images/Big-data_tools-dfs.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-dfs.png)
 
 __HDFS (Hadoop Distributed File System)__ is a distributed file-system across multiple interconnected computer systems (nodes).   
 - Data is stored across multiple hard drives.
@@ -111,18 +111,18 @@ __Google File System (GFS)__: Google propriety distributed file system.
 __MapR__: DFS inspired by HDFS but written in C++ instead of Java. 
 
 ### MapReduce
-![alt text](images/Big-data_tools-MapReduce.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-MapReduce.png)
 
 - MapReduce is the engine that processes data in a Hadoop Ecosystem.
 - Spark and Tez uses a more flexiable in memory model of MapReduce which is better for Machine Learning algorithms.
 
 ### Scheduler
-![alt text](images/Big-data_tools-Scheduler.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-Scheduler.png)
 
 In order for multiple people to run on the same cluster, a scheduler is needed.
 
 ### Data Manipulation
-![alt text](images/Big-data_tools-Data-Manipulation.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-Data-Manipulation.png)
 
 These are the tools to help parse, transform, and combine various datasets.
 
@@ -130,7 +130,7 @@ These are the tools to help parse, transform, and combine various datasets.
 - Hive can be implemented using the Spark MapReduce Engine (significantly speeding it it's processes).
 
 ### Data Analysis
-![alt text](images/Big-data_tools-ML_algorithms.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-ML_algorithms.png)
 
 There are several Machine Learning algorithms already in place for the Hadoop Ecosystem.
 
@@ -144,7 +144,7 @@ __Hadoop Image Processing Interface (HIPI)__: Image processing package helping t
 __SpatialHadoop__: Extension to process datasets of spatial data in Hadoop.
 
 ### Serialization
-![alt text](images/Big-data_tools-serialization.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-serialization.png)
 
 Parsing, transforming and combining the data into a useable dataset can be time consuming. Thus, once a suitable amount of work is done to create a useable dataset it is best to save it for future work. 
 
@@ -161,7 +161,7 @@ __Protocol Buffers:__ More optimal serialization that requires the precise struc
 __Parquet:__ A columnar data storage format, allowing it perform well for structured data with a fair amount of repetition.
 
 ### Data Transfer
-![alt text](images/Big-data_tools-Data_transfer.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-Data_transfer.png)
 
 Data transfer of large amounts of data to and from dfs.
 
@@ -170,7 +170,7 @@ __Flume, DistCp__: Move files and flat text into Hadoop.
 __Sqoop__: Move data between Hadoop and SQL.
 
 ### Streaming
-![alt text](images/Big-data_tools-Streaming.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-Streaming.png)
 
 __Streaming__ provides new calculations based on incoming data.
 
@@ -182,7 +182,7 @@ __Spark Streaming__: Uses a micro-batch model that checks updates every 0.5-10 s
 __Storm__: Uses either streaming or micro-batch updates to update model.
 
 ### Management and Monitoring
-![alt text](images/Big-data_tools-management.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-management.png)
 
 __Node configuration management__: Puppet, Chef. Change operating system parameters and install software.
 
@@ -207,14 +207,14 @@ __Oozie__: Workflow scheduler to start, stop, suspend and restart jobs, controll
 __Ganglia__: Visualize how systems are being used and keeping track of general health of cluster.
 
 ### Security, Access Control, and Auditing
-![alt text](images/Big-data_tools-security.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-security.png)
 
 Hadoop in itself doesn't provide much security. As Hadoop increased in popularity, so has security projects.
 
 Kerberos, Sentry, Knox are such projects.
 
 ### Cloud Computing and Virtualization
-![alt text](images/Big-data_tools-Cloud.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Big-data_tools-Cloud.png)
 
 Sometimes you only need intermediate use of a cluster and creating/maintaining one of your own is prohibitively expensive. 
 
@@ -261,7 +261,7 @@ __Record Reader__ splits input into fixed-size pieces for each mapper.
 
 - The key is positional information (the number of bytes from start of file) and the value is the chunk of data composing a single record.
 
-![alt text](images/MapReduceInput.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/MapReduceInput.png)
 
 - In hadoop, each map task's is an input split which is usually simply a HDFS block
     - Hadoop tries scheduling map tasks on nodes where that block is stored (data locality)
@@ -269,7 +269,7 @@ __Record Reader__ splits input into fixed-size pieces for each mapper.
 
 ## Map
 __Map__ _User defined function_ outputing intermediate key-value pairs
-![alt text](images/MapReduceMapper.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/MapReduceMapper.png)
 
 __key__ ($k_{2}$): Later, MapReduce will group and possibly aggregate data according to these keys, choosing the right keys is here is important for a good MapReduce job.
 
@@ -278,7 +278,7 @@ __value__ ($v_{2}$): The data to be grouped according to it's keys.
 ## Combiner (Optional)
 
 __Combiner__ _UDF_ that aggregates data according to intermediate keys on a mapper node
-![alt text](images/MapReduceCombiner.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/MapReduceCombiner.png)
 
 - This can usually reduce the amount of data to be sent over the network increasing efficiency  
 
@@ -294,7 +294,7 @@ $$\left.\begin{array}{r}
 
 ## Partitioner
 __Partitioner__ Sends intermediate key-value pairs (k,v) to reducer by   $$\mbox{Reducer}=\mbox{hash}\left(\mbox{k}\right)\pmod{R}$$  
-![alt text](images/MapReducePartitioner.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/MapReducePartitioner.png)
 
 - will usually result in a roughly balanced load accross the reducers while ensuring that all key-value pairs are grouped by their key on a single reducer. 
 - A balancer system is in place for the cases when the key-values are too unevenly distributed.
@@ -302,15 +302,15 @@ __Partitioner__ Sends intermediate key-value pairs (k,v) to reducer by   $$\mbox
 
 ## Shuffle and Sort
 __Shuffle and Sort__ On reducer node, sorts by key to help group equivalent keys
-![alt text](images/MapReduceSort.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/MapReduceSort.png)
 
 ## Reduce
 __Reduce__ _User Defined Function_ that aggregates data (v) according to keys (k) to send key-value pairs to output
-![alt text](images/MapReduceReduce.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/MapReduceReduce.png)
 
 ## Output Format
 __Output Format__ Translates final key-value pairs to file format (tab-seperated by default).
-![alt text](images/MapReduceOutput.png)
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/MapReduceOutput.png)
 
 ### MapReduce Example: Word Count
 
@@ -319,7 +319,7 @@ Image Source: [Xiaochong Zhang's Blog](http://xiaochongzhang.me/blog/)
 
 ## DAG Models
 A more flexible form of MapReduce is used by Spark using __Directed Acyclic Graphs (DAG)__. 
-![alt text](images/DAG.png)  
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/DAG.png)  
 
 For a set of operations:  
 
@@ -343,7 +343,7 @@ For a set of operations:
 
  
 ## Partition and Model
-![alt text](images/Partition_model.png)  
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Partition_model.png)  
 
 ### Notes  
 
@@ -367,7 +367,7 @@ __Sufficient Statistic__: A statistic with respect to a model and parameter $\th
 
 - Sketching / Sufficient Statistics programming model aims to break down the algorithm into sketches which is then passed off into the next phase of the algorithm.
 
-![alt text](images/sketch_model.png)  
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/sketch_model.png)  
 
 ### Notes  
 
@@ -383,10 +383,10 @@ __Sufficient Statistic__: A statistic with respect to a model and parameter $\th
   
 $$\begin{aligned}\hat{\theta}=\frac{1}{n}\sum_{i=1}^{n}x_{i} &  & \overline{\hat{\theta}}=\frac{1}{\beta}\sum_{i=1}^{\beta}\hat{\theta}_{i}\end{aligned}
 $$
-![alt text](images/Partition_model_example.png)  
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/Partition_model_example.png)  
 
 ### Sufficient Statistic / Sketch
-![alt text](images/sketch_model_example.png) 
+![alt text](https://github.com/NormallySane/Big_Data_Presentation/blob/master/images/sketch_model_example.png) 
 
 ## Example: Mean Code
 
